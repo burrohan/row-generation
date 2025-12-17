@@ -1,0 +1,137 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "rEdJFqmyrgRIakWXyN0aeqEchsxjbd6R",
+        "properties": {
+          "type": "NetworkDestination",
+          "groupMpath": "grp-rggf6w0fd8r9xmd71.",
+          "createDate": "2025-11-26T19:38:32.155Z",
+          "updateDate": "2025-11-26T19:39:32.305Z",
+          "version": 3,
+          "name": "Point",
+          "groupId": "grp-rggf6w0fd8r9xmd71"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.190879301,
+            39.50522094
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "ykdq0SOzNIwOm_G9jnifO",
+        "properties": {
+          "type": "NetworkPath",
+          "createDate": "2025-11-26T19:38:54.022Z",
+          "updateDate": "2025-11-26T19:39:11.156Z",
+          "version": 4,
+          "direction": "two_way",
+          "speedLimit": "1.2",
+          "enabled": true
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -75.190879301,
+              39.50522094
+            ],
+            [
+              -75.190860611,
+              39.50522464
+            ],
+            [
+              -75.19084382,
+              39.505226805
+            ],
+            [
+              -75.190826478,
+              39.50522642
+            ],
+            [
+              -75.190813598,
+              39.505225282
+            ],
+            [
+              -75.190800168,
+              39.505221594
+            ],
+            [
+              -75.19079134,
+              39.505217823
+            ],
+            [
+              -75.190779806,
+              39.505209899
+            ],
+            [
+              -75.190766415,
+              39.505194261
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "b7-8ACs22WVVAam4mgrI7",
+        "properties": {
+          "type": "NetworkPath",
+          "createDate": "2025-11-26T19:38:54.008Z",
+          "updateDate": "2025-11-26T19:39:28.810Z",
+          "version": 5,
+          "direction": "two_way",
+          "speedLimit": "1.2",
+          "enabled": true
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -75.192696549,
+              39.504949168
+            ],
+            [
+              -75.192690022,
+              39.504927846
+            ],
+            [
+              -75.192682815,
+              39.504895108
+            ],
+            [
+              -75.192674648,
+              39.50487929
+            ],
+            [
+              -75.192664748,
+              39.504870725
+            ],
+            [
+              -75.192652278,
+              39.504864595
+            ],
+            [
+              -75.192640064,
+              39.504861779
+            ],
+            [
+              -75.192624091,
+              39.504861774
+            ],
+            [
+              -75.192499381,
+              39.50488518
+            ],
+            [
+              -75.190879301,
+              39.50522094
+            ]
+          ]
+        }
+      }
+    ]
+  }

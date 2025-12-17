@@ -1,0 +1,45 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "ODZgYhaWJd5eppitk9juv5MtiWncX1dp",
+        "properties": {
+          "type": "AnnotationPolygon",
+          "groupMpath": "067f43c1-cc1e-7aec-8000-f0c8cbb47388.grp-4yyy2h5yttr1fgz8g.",
+          "createDate": "2025-11-24T21:16:15.017Z",
+          "updateDate": "2025-11-25T20:54:58.034Z",
+          "version": 19,
+          "name": "D",
+          "groupId": "grp-4yyy2h5yttr1fgz8g"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -75.191017874,
+                39.508697775
+              ],
+              [
+                -75.19279861,
+                39.508729259
+              ],
+              [
+                -75.192457981,
+                39.506058639
+              ],
+              [
+                -75.190678501,
+                39.506028189
+              ],
+              [
+                -75.191017874,
+                39.508697775
+              ]
+            ]
+          ]
+        }
+      }
+    ]
+  }

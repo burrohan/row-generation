@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "b3_4_c756EX",
+      "properties": {
+        "type": "NetworkDestination",
+        "groupMpath": "067f051e-e825-74ae-8000-b116149b2eac.06804244-93bf-725f-8000-bd6cce2da1f5.",
+        "createDate": "2025-11-24T15:48:36.579Z",
+        "updateDate": "2025-11-24T15:48:36.579Z",
+        "version": 1,
+        "name": "B3/4",
+        "groupId": "06804244-93bf-725f-8000-bd6cce2da1f5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.177011769,
+          39.502458348
+        ]
+      }
+    }
+  ]
+}

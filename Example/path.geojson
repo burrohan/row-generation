@@ -1,0 +1,32 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "path_o2lGRm",
+      "properties": {
+        "type": "NetworkPath",
+        "createDate": "2025-11-25T21:09:33.916Z",
+        "updateDate": "2025-11-25T21:09:33.916Z",
+        "version": 1,
+        "name": "Path",
+        "direction": "two_way",
+        "speedLimit": "1.2",
+        "enabled": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.192801569,
+            39.50874444
+          ],
+          [
+            -75.191027383,
+            39.508716765
+          ]
+        ]
+      }
+    }
+  ]
+}

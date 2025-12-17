@@ -1,0 +1,53 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "D7PgS_PA75BDUVAqk9OeZ",
+        "properties": {
+          "type": "NetworkPath",
+          "createDate": "2025-11-25T21:11:25.423Z",
+          "updateDate": "2025-11-25T21:15:04.380Z",
+          "version": 21,
+          "name": "",
+          "direction": "two_way",
+          "speedLimit": "1.2",
+          "enabled": true,
+          "trafficLinkedPathIds": []
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -75.191027383,
+              39.508716765
+            ],
+            [
+              -75.190993722,
+              39.508715932
+            ],
+            [
+              -75.190977487,
+              39.508712148
+            ],
+            [
+              -75.190971696,
+              39.508709305
+            ],
+            [
+              -75.19095492,
+              39.508696635
+            ],
+            [
+              -75.190944313,
+              39.508683179
+            ],
+            [
+              -75.19093631,
+              39.50866422
+            ]
+          ]
+        }
+      }
+    ]
+  }
