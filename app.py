@@ -17,43 +17,14 @@ if "output_fc" not in st.session_state:
 if "last_error" not in st.session_state:
     st.session_state["last_error"] = None
 
-EXAMPLE_PATH = Path("Example/rows.geojson")
-EXAMPLE_TURN = Path("Example/destination.geojson")
+EXAMPLE_PATH = Path("Example/combined.geojson")
+EXAMPLE_TURN = Path("Example/turn.geojson")
 
 
-def load_geojson_from_upload(upload) -> Optional[dict]:
-    """Parse an uploaded Streamlit file into a GeoJSON dict.
-
-    This is more robust across different UploadedFile implementations:
-    - prefer UploadedFile.getvalue() when available
-    - handle bytes or str payloads
-    """
-    if upload is None:
-        return None
-    try:
-        # UploadedFile supports getvalue() in Streamlit; fall back to read()
-        if hasattr(upload, "getvalue"):
-            raw = upload.getvalue()
-        else:
-            raw = upload.read()
-        if isinstance(raw, bytes):
-            raw = raw.decode("utf-8")
-        return json.loads(raw)
-    except Exception:
-        st.error("Could not parse uploaded GeoJSON.")
-        return None
 
 
-def load_example_if_missing(fc_upload):
-    if fc_upload is not None:
-        return load_geojson_from_upload(fc_upload)
-    if EXAMPLE_PATH.exists():
-        try:
-            return json.loads(EXAMPLE_PATH.read_text())
-        except Exception:
-            st.error("Failed reading Example/rows.geojson")
-            return None
-    return None
+
+
 
 
 def find_area_and_ab(fc: dict):
@@ -247,8 +218,6 @@ with col2:
         except Exception as e:
             st.error(f"Could not parse Line GeoJSON: {str(e)}")
             line_fc = None
-    elif uploaded_line is not None:
-        line_fc = load_geojson_from_upload(uploaded_line)
     elif use_example and EXAMPLE_PATH.exists():
         try:
             ex = json.loads(EXAMPLE_PATH.read_text())
