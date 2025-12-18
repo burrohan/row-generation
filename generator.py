@@ -298,25 +298,31 @@ def generate_rows_geojson(
     import datetime
     current_time = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='milliseconds').replace('+00:00', 'Z')
     
+    # Initialize sequential numbering
+    current_num = start_num
+
     # Process each clipped row
     for row_index, seg in clipped_rows:
         # Orient segment consistently with AB direction (left to right)
         seg_coords = list(seg.coords)
         seg_start_x = seg_coords[0][0]
         seg_end_x = seg_coords[-1][0]
-        
+
         # If AB goes left-to-right (bx > ax), ensure segment also goes left-to-right
         if (bx > ax and seg_start_x > seg_end_x) or (bx < ax and seg_start_x < seg_end_x):
             seg = LineString(seg_coords[::-1])
             seg_coords = list(seg.coords)
 
-        # Generate label
+        # Generate label using sequential numbering
         if dual_zone:
-            label1 = _label_sequence(start_letter, start_num, row_index, zero_pad, keep_start_letter)
-            label2 = _label_sequence(start_letter, start_num, row_index + 1, zero_pad, keep_start_letter)
+            label1 = _label_sequence(start_letter, current_num, 0, zero_pad, keep_start_letter)
+            current_num += 1
+            label2 = _label_sequence(start_letter, current_num, 0, zero_pad, keep_start_letter)
+            current_num += 1
             label = f"{label1}/{label2}"
         else:
-            label = _label_sequence(start_letter, start_num, row_index, zero_pad, keep_start_letter)
+            label = _label_sequence(start_letter, current_num, 0, zero_pad, keep_start_letter)
+            current_num += 1
 
         # TRANSFORM BACK: Unrotate and project to WGS84
         seg_unrot = _rotate(seg, angle_deg, origin=rotation_origin)
